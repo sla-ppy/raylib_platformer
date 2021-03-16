@@ -1,0 +1,7 @@
+"D:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\User\source\repos\CLionRepos\raylib_platformer
+CMake Error at CMakeLists.txt:5 (add_subdirectory):
+  add_subdirectory given source "raylib" which is not an existing directory.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/User/source/repos/CLionRepos/raylib_platformer/cmake-build-debug/CMakeFiles/CMakeOutput.log".
