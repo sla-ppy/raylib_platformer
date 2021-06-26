@@ -8,6 +8,13 @@
 <br>
 <br>
 
+## Game Controls:
+```markdown
+Movement  ->  Up, Down, Left, Right
+Quit Game  ->  ESC
+```
+<br>
+<br>
 
 ### Library used:
 > [raylib](https://www.raylib.com/index.html)
