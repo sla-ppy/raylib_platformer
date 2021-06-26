@@ -3,6 +3,8 @@
 #include "game.h"
 #include "player.h"
 
+
+
 Game::Game() {
     // INIT:
     const int SCREEN_WIDTH { 800 };
@@ -13,8 +15,6 @@ Game::Game() {
 
     // Set our game to run at 60 fps
     SetTargetFPS(60);
-
-
 }
 
 void Game::update() {
@@ -32,7 +32,8 @@ void Game::update() {
         ClearBackground(RAYWHITE);
 
         DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
-        DrawTexture(player.texture, (player.pos_x = GetScreenWidth() / 2), (player.pos_y = GetScreenHeight() / 2), RAYWHITE);
+        DrawFPS(5, 0);
+        DrawTexture(player.texture, (player.pos.x), (player.pos.y), RAYWHITE);
 
         EndDrawing();
     }

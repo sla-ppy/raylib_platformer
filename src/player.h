@@ -3,11 +3,13 @@
 
 struct Player {
 public:
-    int pos_x {};
-    int pos_y {};
+
+    Vector2 pos{};
+    Vector2 direction {};
+    float speed {5};
 
     // NOTE: Textures MUST be loaded after Window initialization (OpenGL context is required)
-    Texture2D texture = LoadTexture("../assets/player_v1.png");
+    Texture2D texture = LoadTexture("../assets/png/player_v1.png");
 
     void inputCheck();
 

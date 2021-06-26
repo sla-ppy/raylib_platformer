@@ -1,24 +1,32 @@
 #include "raylib.h"
 
 #include "player.h"
+#include "vector_math.h"
 
 Player::Player() {
-    pos_x = GetScreenWidth() / 2;
-    pos_y = GetScreenHeight() / 2;
+    pos.x = GetScreenWidth() / 2;
+    pos.y = GetScreenHeight() / 2;
 }
 
 void Player::inputCheck() {
+
+    // Vector2 normDir = normalized(direction);
+    // Vector2 velocity{};
+    // velocity.x = normDir.x * speed;
+    // velocity.y = normDir.y * speed;
+    // pos.y += velocity.y * speed;
+
     if (IsKeyDown(KEY_UP)) {
-        DrawTexture(texture, pos_x, pos_y -= 25, RAYWHITE);
+        pos.y -= 5;
     }
     if (IsKeyDown(KEY_DOWN)) {
-        DrawTexture(texture, pos_x, pos_y += 25, RAYWHITE);
+        pos.y += 5;
     }
     if (IsKeyDown(KEY_LEFT)) {
-        DrawTexture(texture, pos_x -= 25, pos_y, RAYWHITE);
+        pos.x -= 5;
     }
     if (IsKeyDown(KEY_RIGHT)) {
-        DrawTexture(texture, pos_x += 25, pos_y, RAYWHITE);
+        pos.x += 5;
     }
 }
 
