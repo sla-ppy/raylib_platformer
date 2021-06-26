@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/raylib_platformer.dir/main.cpp.obj"
-  "raylib_platformer.exe"
-  "raylib_platformer.exe.manifest"
-  "raylib_platformer.lib"
+  "CMakeFiles/raylib_platformer.dir/main.cpp.o"
+  "raylib_platformer"
   "raylib_platformer.pdb"
 )
 

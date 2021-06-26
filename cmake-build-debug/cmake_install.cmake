@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/User/source/repos/CLionRepos/raylib_platformer
+# Install script for directory: /home/sla-ppy/myFolder/tph_game_jam_2021_06_24_-_2021_07_07/raylib_platformer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/raylib_platformer")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,14 +27,24 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/User/source/repos/CLionRepos/raylib_platformer/cmake-build-debug/raylib/cmake_install.cmake")
+  include("/home/sla-ppy/myFolder/tph_game_jam_2021_06_24_-_2021_07_07/raylib_platformer/cmake-build-debug/raylib/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/User/source/repos/CLionRepos/raylib_platformer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sla-ppy/myFolder/tph_game_jam_2021_06_24_-_2021_07_07/raylib_platformer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
