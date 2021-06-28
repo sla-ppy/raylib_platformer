@@ -8,6 +8,10 @@
 <br>
 <br>
 
+## Specifications:
+- Resolution: 960 x 720
+- Aspect Ratio: 4:3
+
 ## Game Controls:
 ```markdown
 Movement  ->  Up, Down, Left, Right
